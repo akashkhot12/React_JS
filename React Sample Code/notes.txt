@@ -1,0 +1,17 @@
+1. Props 
+2. State
+3. Event handling 
+4. Class Components 
+    a. React LifeCycle - ComponentDidMount, ComponentDidUpdate, ComponentWillUnmount,ShouldComponentUpdate
+    b. State Management
+    c. Props Management
+
+5. Functional Components
+    a. Hooks - useState,useEffect,useRef,useReducer,useContext,useMemo,useCallback,custom-hooks
+    b. State Management
+    c. Props Management
+
+high priority
+a. Array destructuring
+b. Object destructuring
+c. variables
