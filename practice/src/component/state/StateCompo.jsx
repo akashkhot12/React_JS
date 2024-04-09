@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 
 export default function StateCompo() {
-    const [data,resetData]=useState("akash");
-    function setvalue(){
-        resetData("Khot")
+    let [data,reset]=useState("AKASH")
+    function valueChange(){
+        reset("Khot")
     }
   return (
     <div>
         <h1>State Component</h1>
-        <h2>{data}</h2>
-      <Button onClick={setvalue} variant="warning">Click me </Button>
+        <h1>{data}</h1>
+      <Button onClick={valueChange} variant="warning">Click me </Button>
     </div>
   )
 }
