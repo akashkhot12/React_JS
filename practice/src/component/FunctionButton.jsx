@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import StateCompo from './state/StateCompo';
+import ClassStateCompo from './state/ClassStateCompo';
 
 export default function FunctionButton() {
     // let name = "akash khot"
@@ -11,6 +11,7 @@ export default function FunctionButton() {
     <div>
         {/* <Button onClick={clickButton} variant="warning">Warning</Button> */}
         <StateCompo/>
+        <ClassStateCompo/>
     </div>
   )
 }
