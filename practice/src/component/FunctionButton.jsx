@@ -7,7 +7,7 @@ export default function FunctionButton() {
     }
     return (
     <div>
-        <Button onClick={clickButton} variant="warning">Warning</Button>
+        <Button onClick={()=>clickButton()} variant="warning">Warning</Button>
     </div>
   )
 }
