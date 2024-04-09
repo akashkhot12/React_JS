@@ -1,4 +1,4 @@
-import Akash from "./component/Akash";
+import Akash from "./component/NavBar";
 
 export default function App() {
   return (

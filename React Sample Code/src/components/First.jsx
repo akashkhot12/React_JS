@@ -12,7 +12,7 @@ export default function First(props) {
       <h1>
         <b>First Counter : {props.counter}</b>
       </h1>
-      <button onClick={() => props.handleCount(props.counter + 1)}>
+      <button onClick={() => props.handleCount(props.counter ++)}>
         incrmeent count
       </button>
     </div>
