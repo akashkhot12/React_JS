@@ -4,12 +4,20 @@ export default class ClassStateCompo extends Component {
     constructor(){
         super();
         this.state={
-            data:"akash"
+            data:0
         }
     }
-  render() {
+    nameChange(){
+        this.setState({data:this.state.data+1})
+    }
+    render() {
+    
     return (
-      <div><h1>{this.state.data}</h1></div>
+      <div>
+        <h1>class state component</h1>
+        <h1>{this.state.data}</h1>
+        <button onClick={()=>this.nameChange()}>click</button>
+      </div>
     )
   }
 }
