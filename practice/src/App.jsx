@@ -1,5 +1,5 @@
 import ClassCompo from "./component/ClassCompo";
-
+import React,{Component, component} from "react";
 
 export default function App() {
   return (
@@ -7,6 +7,10 @@ export default function App() {
     <h1>Hello akash</h1>
     <h2>hello chetana</h2>
     <ClassCompo/>
+    <User/>
     </>
   )
 }
+
+
+
