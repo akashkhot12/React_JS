@@ -1,15 +1,17 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import StateCompo from './state/StateCompo';
 
 export default function FunctionButton() {
-    let name = "akash khot"
-    function clickButton() {
-        alert("you press the button..!")
-    }
+    // let name = "akash khot"
+    // function clickButton() {
+    //     alert("you press the button..!")
+    // }
     return (
     <div>
-        <h1>{name}</h1>
-        <Button onClick={()=>clickButton()} variant="warning">Warning</Button>
+        {/* <Button onClick={clickButton} variant="warning">Warning</Button> */}
+        <StateCompo/>
     </div>
   )
 }
+
