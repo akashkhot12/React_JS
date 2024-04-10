@@ -1,9 +1,11 @@
 import React from 'react'
-import Mobile from './Component/basic'
+import BasicClassComponent from './Component/BasicClassComponent'
+import Basic from './Component/Basic'
 export default function App() {
   return (
     <div>
-      <Mobile/>
+      <Basic/>
+      <BasicClassComponent/>
     </div>
   )
 }

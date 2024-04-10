@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Mobile() {
+export default function Basic() {
   return (
     <div>
         <h1>Samsung</h1>
