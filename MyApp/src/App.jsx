@@ -5,7 +5,7 @@ import Click from './Component/Events/Click'
 import Rerendering from './Component/Events/Rerendering'
 import ClassComponet from './Component/Events/ClassComponet'
 import Parents from './Component/Events/Parents'
-import Parents1 from './Component/Events/Parents1'
+import Input from './Component/Events/Input'
 export default function App() {
   return (
     <div>
@@ -15,7 +15,8 @@ export default function App() {
       {/* <Rerendering/> */}
       {/* <ClassComponet/> */}
       {/* <Parents/> */}
-      <Parents1/>
+      {/* <Parents1/> */}
+      <Input/>
     </div>
   )
 }
