@@ -7,6 +7,7 @@ export default function Input() {
     function getData(val){
         console.log(val.target.value);
         setData(val.target.value)
+        setPrint(false);
         
     }
   return (

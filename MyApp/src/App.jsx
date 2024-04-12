@@ -6,6 +6,7 @@ import Rerendering from './Component/Events/Rerendering'
 import ClassComponet from './Component/Events/ClassComponet'
 import Parents from './Component/Events/Parents'
 import Input from './Component/Events/Input'
+import HideAndShow from './Component/Events/HideAndShow'
 export default function App() {
   return (
     <div>
@@ -16,7 +17,8 @@ export default function App() {
       {/* <ClassComponet/> */}
       {/* <Parents/> */}
       {/* <Parents1/> */}
-      <Input/>
+      {/* <Input/> */}
+      <HideAndShow/>
     </div>
   )
 }
