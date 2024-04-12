@@ -7,6 +7,7 @@ import ClassComponet from './Component/Events/ClassComponet'
 import Parents from './Component/Events/Parents'
 import Input from './Component/Events/Input'
 import HideAndShow from './Component/Events/HideAndShow'
+import Form from './Component/Events/Form'
 export default function App() {
   return (
     <div>
@@ -18,7 +19,8 @@ export default function App() {
       {/* <Parents/> */}
       {/* <Parents1/> */}
       {/* <Input/> */}
-      <HideAndShow/>
+      {/* <HideAndShow/> */}
+      <Form/>
     </div>
   )
 }
