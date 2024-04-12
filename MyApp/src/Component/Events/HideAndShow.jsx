@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function HideAndShow() {
-    const [status,setStatus]=useState(true);
+    const [status,setStatus]=React.useState(true);
   return (
     <div>
         {
