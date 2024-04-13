@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -9,6 +9,14 @@ import SingleBlog from "./components/SingleBlog";
 import NotFound from "./components/NotFound";
 
 export default function App() {
+  const data = {
+    fname:"Piyush",
+    lname:"Thawrae"
+  }
+
+  const[dataFromChild,setDataFromChild] = useState(null);
+  console.log(dataFromChild);
+  
   return (
     <main>
       <Routes>
@@ -16,7 +24,7 @@ export default function App() {
         <Route path="/about" element={<About />} /> */}
 
         <Route path="/" Component={Layout}>
-          <Route index path="" Component={Home} />
+          <Route index path="" element={<Home data={data} setDataFromChild={setDataFromChild} /> } />
           <Route path="about" Component={About} />
           <Route path="blog" Component={Blog} />
           <Route path="blog/:id" Component={SingleBlog} />
