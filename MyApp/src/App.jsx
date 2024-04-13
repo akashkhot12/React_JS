@@ -10,9 +10,12 @@ import HideAndShow from './Component/Events/HideAndShow'
 import Form from './Component/Events/Form'
 import Conditions from './Component/Events/Conditions'
 import Login from './Component/Events/Login'
+import Array from './Component/Events/Array'
+import Table from './Component/Events/Table'
 
 
 export default function App() {
+ 
   return (
     <div>
       {/* <Basic/>
@@ -26,7 +29,9 @@ export default function App() {
       {/* <HideAndShow/> */}
       {/* <Form/> */}
       {/* <Conditions/> */}
-      <Login/>
+      {/* <Login/> */}
+      {/* <Array/> */}
+     <Table/>
     </div>
   )
 }
