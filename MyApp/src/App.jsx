@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import BasicClassComponent from './Component/BasicClassComponent'
 import Basic from './Component/Basic'
 import Click from './Component/Events/Click'
@@ -11,7 +12,7 @@ import Form from './Component/Events/Form'
 import Conditions from './Component/Events/Conditions'
 import Login from './Component/Events/Login'
 import Array from './Component/Events/Array'
-import Table from './Component/Events/Table'
+import TableComponent from './TableComponent';
 
 
 export default function App() {
@@ -31,7 +32,7 @@ export default function App() {
       {/* <Conditions/> */}
       {/* <Login/> */}
       {/* <Array/> */}
-     <Table/>
+      <TableComponent/>
     </div>
   )
 }
