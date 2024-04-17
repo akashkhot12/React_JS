@@ -42,7 +42,7 @@ function Layout() {
   return (
     <div className="">
       <Header />
-      {/* this is must to all render outlets  */}
+      {/* this is must to all render outlets */}
       <Outlet />
     </div>
   );
