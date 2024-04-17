@@ -21,8 +21,8 @@ export default function App() {
     <main>
       <Routes>
         {/* <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} /> */}
-
+        <Route path="/about" element={<About />} /> */} 
+        {/* implements the router for perticulaar parts and they assign for it  */}
         <Route path="/" Component={Layout}>
           <Route index path="" element={<Home data={data} setDataFromChild={setDataFromChild} /> } />
           <Route path="about" Component={About} />
@@ -37,10 +37,12 @@ export default function App() {
   );
 }
 
+// this router outlet is use for perticular constant base ui to all routes to be delclared.
 function Layout() {
   return (
     <div className="">
       <Header />
+      {/* this is must to all render outlets  */}
       <Outlet />
     </div>
   );
