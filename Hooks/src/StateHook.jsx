@@ -1,27 +1,26 @@
 import React, { useState } from 'react'
+import './App.css'
 
 export default function StateHook() {
-    const [count,setCount] = useState({value:0,name:"Akash"});
-    const value = count.value
-    const name = count.name
+const [state,setState] = useState({count:0,name:"START"});
+const count = state.count;
+const name = state.name;
 
-    function increment(){
-       setCount(prevCount=>{
-        return{...prevCount,name:"Increment",value:prevCount.count+1}
-       })
-    }
-
-    function decrement(){
-        setCount(prevCount=>{
-         return{...prevCount,name:"decrement",value:prevCount.count-1}
-        })
-     }
-    
+function increment(){
+    setState(prevCount=>{
+        return{...prevCount,name:"INCREMENT",count:prevCount.count+1}
+    })
+}
+function decrement(){
+    setState(prevCount=>{
+        return{...prevCount,name:"DECREMENT",count:prevCount.count-1}
+    })
+}
 
   return (
-    <div>
-        <h1>{name}</h1>
-        <button onClick={increment}>Add</button> {value} <button onClick={decrement}>Minus</button>
+    <div className='digit'>
+        <h3>{name}</h3>
+        <button onClick={increment}>+</button><span className='digit'>{count}</span><button onClick={decrement}>-</button>
     </div>
   )
 }
