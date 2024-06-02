@@ -5,7 +5,7 @@ function DummyDataComponent() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(jsonData => {
         setData(jsonData);
@@ -17,6 +17,7 @@ function DummyDataComponent() {
       });
   }, []);
 
+
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -27,7 +28,7 @@ function DummyDataComponent() {
         <ul>
           {data.map(item => (
             <li key={item.id}>
-              <strong>{item.title}</strong>: {item.body}
+              <strong>{item.name}</strong>: {item.username}
             </li>
           ))}
         </ul>
