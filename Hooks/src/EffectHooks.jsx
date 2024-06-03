@@ -11,9 +11,9 @@ export default function EffectHooks() {
 
     useEffect(()=>{
 
-        fetch('https://jsonplaceholder.typicode.com/'+content)
-      .then(response => response.json())
-      .then(json => setItems(json))
+      //   fetch('https://jsonplaceholder.typicode.com/'+content)
+      // .then(response => response.json())
+      // .then(json => setItems(json))
 
         console.log("componentDidUpdate");
         // cleaning
