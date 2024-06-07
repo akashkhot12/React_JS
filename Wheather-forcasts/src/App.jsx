@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import TempApp from './components/TempApp'
 
 function App() {
 
   return (
     <div>
-      <h1>hello one</h1>
+      <TempApp/>
     </div>
   )
 }
