@@ -3,6 +3,7 @@ import React from 'react'
 import './App.css'
 import E from './assets/UseContextHooks/E'
 import Memo from './assets/Memo'
+import Ref from './assets/Ref'
 // import EffectHooks from './EffectHooks'
 
 
@@ -12,7 +13,8 @@ export default function App() {
       {/* <StateHook/> */}
       {/* <EffectHooks/> */}
       {/* <E/> */}
-     <Memo/>
+     {/* <Memo/> */}
+     <Ref/>
 
     </div>
   )
