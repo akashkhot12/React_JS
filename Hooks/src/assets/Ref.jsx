@@ -7,6 +7,7 @@ export default function Ref() {
         inputRef.current.value = "10000"
         inputRef.current.focus();
         inputRef.current.style.color = "red";
+        // inputRef.current.style.display = "none";
     }
   return (
     <div>
