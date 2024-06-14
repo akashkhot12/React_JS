@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { getInvoices } from "./Data";
 
 export default function Invoices() {
@@ -17,6 +17,7 @@ export default function Invoices() {
           </Link>
         ))}
       </div>
+      <Outlet></Outlet>
     </div>
   );
 }
