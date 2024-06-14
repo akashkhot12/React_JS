@@ -1,18 +1,19 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
 
-import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Invoices from './Component/Invoices.jsx';
-import Expenses from './Component/Expenses.jsx';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Invoices from "./Component/Invoices.jsx";
+import Expenses from "./Component/Expenses.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-   <Routes>
-    <Route path='/' element={<App/>}/>
-    <Route path='/invoices' element={<Invoices/>}/>
-    <Route path='/expenses' element={<Expenses/>}/>
-   </Routes>
-  </BrowserRouter>,
-)
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route path="/invoices" element={<Invoices />} />
+        <Route path="/expenses" element={<Expenses />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+);
