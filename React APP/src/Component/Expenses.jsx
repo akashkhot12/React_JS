@@ -1,9 +1,11 @@
 import React from 'react'
+import{Link} from 'react-router-dom'
 
 export default function Expenses() {
   return (
     <div className='text-center'>
-        <h1>Expenses</h1>
+        <Link to={'/Cashers'}></Link>
+
     </div>
   )
 }
