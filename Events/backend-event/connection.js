@@ -7,4 +7,11 @@ const connection = mysql.createConnection({
   database: "events-operations",
 });
 
+connection.connect((err)=>{
+    if(err){
+        console.log(err);
+    }
+    console.log("connected successfully");
+})
+
 module.exports = connection;
